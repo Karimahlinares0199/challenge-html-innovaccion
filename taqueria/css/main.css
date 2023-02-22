@@ -1,0 +1,319 @@
+/* aplicación de estilo general de la página */
+
+*{
+    font-family: 'Comic Neue', cursive;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    width: 100%;
+    background-image: url(../img/espacio\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    display:flexbox; 
+}
+
+/* modificación del encabezado con el nav para que quede con el logo, enlaces y
+estático al momento de dar scroll  */
+
+header{
+    background-color: rgba(3, 3, 10, 0.877);
+    width: 100%;
+    height: 20px;
+    clear: both;
+    content:'';
+    display: table;
+    }
+
+.logopalabra{
+width: 150px;
+float: left;
+padding: 8px;
+margin-left: 120px;
+margin-top: 10px;
+}
+
+.contenedormenu{
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    position: fixed;
+    background-color: rgba(3, 3, 10, 0.877);
+    
+}
+
+.navmenu ul li {
+list-style: none;
+margin-left: 10vh;
+margin-right: 10vh;
+float: right;
+padding: 25px 0;
+}
+
+.navmenu a{
+    text-decoration: none;
+    font-weight: bold;  
+    transition: all 0.5s ease; 
+}
+
+.navmenu li a:hover{
+    padding: 5px 10px;
+    background-color: #ffff;
+    border-radius: 15px;
+    color: black
+}
+
+/* Dar estilo donde va el h1, el logo y el párrafo explicativo de la taquería */
+
+.logoimagen{
+    width: 400px;
+    display: flex;
+    margin: auto;
+    padding-top: 15vh;
+    margin-top: 8vh;
+    transition: transform .2;
+}
+
+.logoimagen:hover{
+    transform: scale(1.2);
+}
+
+.titulo{
+    background-color: rgba(3, 3, 10, 0.541);
+    height: 90vh;
+    margin: auto;
+}
+
+h1{
+    font-size: 4rem;   
+    text-transform: uppercase;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 30vh;
+    color: rgb(51, 80, 185);
+
+}
+
+h2{
+    font-size: 1.2rem;
+    margin-top: 5vh;
+}
+
+.quienessomos{
+    width: 800px;
+    display: flex;
+    margin: auto;
+    margin-top: 40vh;
+    text-align: justify;
+    font-size: 2rem;
+}
+
+/* aplicar estilo al div de imagen de tacos, un boxshadow y animación */
+
+.contenedorimg{
+    width: 100%;
+    display: flex;
+    transition: transform .7;
+}
+
+.imgtaco1 {
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 6rem;
+    box-shadow: 15px 15px   rgba(88, 109, 202, 0.5);
+    border-radius: 5px;
+}
+
+.contenedorimg:hover{
+    filter: opacity(.8);
+}
+
+
+/* Implementación de estilo a los contenedores de menú, ubicación y pedidos en general  */
+
+
+.menu, .ubicacion, .pedidos{
+    margin: auto;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    background-color: rgba(9, 13, 31, 0.712);
+    text-align: center;
+    box-shadow: 15px 15px   rgba(88, 109, 202, 0.5); 
+    border-radius: 5px;
+}
+
+/* estilos del icono, h2, h3 y del listado de precios en menú */
+
+.menu img{
+    width: 80px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.menu h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    background-color: rgba(220, 20, 60, 0.747);
+    text-transform: uppercase;
+}
+
+.menu h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(220, 20, 60, 0.336);
+}
+
+.menu ul{
+    margin-bottom: 20px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu p{
+    color: rgba(255, 217, 5, 0.856);
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+/* estilos del icono, h2, h3, tabla donde estan las ubicaciones y horarios */
+
+.ubicacion img{
+    width: 80px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.ubicacion h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    background-color: rgba(220, 20, 60, 0.747);
+    text-transform: uppercase;
+}
+
+.ubicacion h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(220, 20, 60, 0.336);
+}
+
+.ubicacion th{
+    background-color:  rgba(255, 218, 5, 0.411);
+    width: 30px;
+    }
+
+.ubicacion td{
+    height: 80px;
+}
+
+.ubicacion a{
+    text-decoration: none;
+    color:  rgba(209, 6, 46, 0.986) ;   
+}
+
+/* estilos del icono, h2, h3, formulario de pedidos y el boton de enviar */
+
+.pedidos h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    background-color: rgba(220, 20, 60, 0.747);
+    text-transform: uppercase;
+}
+
+.pedidos img{
+    width: 80px;
+    margin: auto;
+    margin-top: 20px;}
+
+.pedidos h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(220, 20, 60, 0.336);
+}
+
+.pedidos p{
+    color: rgba(255, 217, 5, 0.856);
+    margin-bottom: 20px;
+}
+
+.seleccionar-ubicacion select {
+    border-radius: 15px;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(3, 3, 10, .4);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.tipo-taco input {
+    border-radius: 15px;
+    padding: 8px;
+    background-color: rgba(3, 3, 10, .4);
+    margin-left: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tipo-taco label{
+    margin-left: 8px;
+}
+
+.especiales input{
+    border-radius: 15px;
+    padding: 8px;
+    background-color: rgba(3, 3, 10, .4);
+    margin-left: 15px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.especiales button{
+    padding: 8px;
+    width: 180px;
+    border-radius: 15px;
+    background-color: rgba(220, 20, 60, 0.925);
+    margin-bottom: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/* pagina responsive mobile */
+
+@media screen and (Max-width: 720px){
+.navmenu{
+    display: none;
+}
+.menu, .ubicacion, .pedidos, .quienessomos, .imgtaco1{
+    width: 400px;
+    font-size: 18px;
+}    
+.logoimagen{
+    width: 250px;
+   }
+}
+
+
+@media screen and (Max-width: 900px){
+.navmenu ul li{
+margin: 0;  
+padding: 10px;  
+}
+.menu, .ubicacion, .pedidos, .quienessomos, .imgtaco1{
+    width: 500px;
+    font-size: 18px;
+}  
+}
+
+
